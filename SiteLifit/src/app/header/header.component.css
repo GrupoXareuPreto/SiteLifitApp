@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 12px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo img {
+  height: 40px; /* ajusta conforme a imagem da sua logo */
+  display: block;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.menu li a {
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: #808080; /* cinza */
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #90E05E; /* verde ao passar o mouse */
+}
+
+.menu li a.active {
+  color: #90E05E; /* verde igual na imagem */
+  font-weight: 500;
+}
