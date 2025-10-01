@@ -14,4 +14,11 @@ export class HeaderComponent {
     this.isScrolled = window.scrollY > 100; // altera o valor conforme necessário
   }
 
+  navigateTo(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }
