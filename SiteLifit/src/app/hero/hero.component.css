@@ -1,26 +1,39 @@
 .hero {
     display: flex;
-    justify-content: flex-start; /* conteúdo vai para a esquerda */
+    justify-content: flex-start; /* conteúdo à esquerda */
     align-items: center;
-    margin: 7% auto;     /* centraliza a div em relação ao body */
+    margin: 7% auto;
     width: 180vh;
     height: 80vh;
-    background: url(/v688_2540.png) no-repeat center center;
+     background: 
+        linear-gradient(to right, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 100%), 
+        url(/v688_2540.png) no-repeat center center;
     background-size: cover;
     border-radius: 82px;
     overflow: hidden;
 }
 
-.hero-content{
-    max-width: 50%;
+.hero-content {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-left: 66px; 
+    margin-top: 25px; 
 }
 
-.hero-content h1{
+.hero-content h1 {
     color: rgba(255, 255, 255, 1);
-    position: relative;
-    top: 251px;
-    left: 66px;
-    font-family: Inter;
-    font-weight: Light;
+    font-family: Inter, sans-serif;
+    font-weight: light;
     font-size: 67px;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    background: #7fd454;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
 }
