@@ -1,17 +1,22 @@
 .navbar {
+  z-index: 9999;
+  position: fixed; /* ou sticky */
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
+  background: #fffaf1;
   padding: 12px 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  /*box-shadow: 0 2px 4px rgba(0,0,0,0.05);*/
 }
 
 .logo img {
-  height: 40px; /* ajusta conforme a imagem da sua logo */
+  height: 60px; /* ajusta conforme a imagem da sua logo */
   display: block;
 }
-
+ 
 .menu {
   list-style: none;
   display: flex;
@@ -24,7 +29,7 @@
 .menu li a {
   font-family: 'Inter', sans-serif;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   color: #808080; /* cinza */
   transition: color 0.3s ease;
 }

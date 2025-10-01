@@ -1,0 +1,26 @@
+.hero {
+    display: flex;
+    justify-content: flex-start; /* conteúdo vai para a esquerda */
+    align-items: center;
+    margin: 7% auto;     /* centraliza a div em relação ao body */
+    width: 180vh;
+    height: 80vh;
+    background: url(/v688_2540.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 82px;
+    overflow: hidden;
+}
+
+.hero-content{
+    max-width: 50%;
+}
+
+.hero-content h1{
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    top: 251px;
+    left: 66px;
+    font-family: Inter;
+    font-weight: Light;
+    font-size: 67px;
+}
