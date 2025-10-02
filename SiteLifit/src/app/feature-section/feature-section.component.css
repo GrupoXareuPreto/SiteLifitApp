@@ -1,6 +1,49 @@
+.features-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.feature h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  max-width: 300px; /* deixa o texto quebrar em linhas igual na imagem */
+}
+
+.feature-card {
+  position: relative;
+  width: 400px; /* ajusta conforme o tamanho da imagem */
+  height: 400px;
+}
+
 .feature-shape {
-  width: 50vh;
-  height: 59.03vh;
+  position: absolute;
+  top: 0;
+  left: 50px; /* empurra um pouco o shape para trás da mulher */
+  width: 250px;
+  height: 100%;
   background: #dbe8d2;
   transform: skew(-20deg);
+  z-index: 1; /* fica atrás da imagem */
+}
+
+.feature-card img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  z-index: 2; /* fica na frente do shape */
+}
+
+.lifit-verde{
+  color: #90E05E;
 }

@@ -3,9 +3,9 @@
     justify-content: flex-start; /* conteúdo à esquerda */
     align-items: center;
     margin: 7% auto;
-    width: 180vh;
+    width: 130vh;
     height: 80vh;
-     background: 
+    background: 
         linear-gradient(to right, rgba(0,0,0,0.7) 20%, rgba(0, 0, 0, 0.123) 60%, rgba(0, 0, 0, 0) 100%), 
         url(/v688_2540.png) no-repeat center center;
     background-size: cover;
