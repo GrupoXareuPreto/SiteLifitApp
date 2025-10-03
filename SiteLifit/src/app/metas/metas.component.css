@@ -1,0 +1,62 @@
+.metas-section {
+  padding: 60px 20px;
+  background-color: #2B3C45;
+}
+
+.metas-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+/* Imagens dos celulares */
+.metas-card {
+  width: 250px;   /* <<< controla a largura da imagem (celulares) */
+  height: auto;
+}
+
+.metas-card img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.metas-card img:hover {
+  transform: translateY(-10px);
+}
+
+/* Texto à direita */
+.metas-text {
+  margin: 0 50px 50px 50px;;        /* sem margem nenhuma */
+  line-height: 1;
+  flex: 1;
+  text-align: right;
+}
+
+.metas-text h2 {
+  font-size: 2.6rem;
+  color: #ffffff;
+  margin: 0 50px 50px 50px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.metas-exemplos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  margin: 120px 180px 50px 32px;
+}
+
+.metas-exemplos img {
+  width: 280px;
+  height: auto;
+}
