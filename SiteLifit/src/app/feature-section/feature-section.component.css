@@ -5,14 +5,23 @@
   padding: 50px;
 }
 
-.feature {
+.feature-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.feature h2 {
+.feature-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-container h2{
   font-family: 'Inter', sans-serif;
   font-size: 3.5rem;
   font-weight: 400;

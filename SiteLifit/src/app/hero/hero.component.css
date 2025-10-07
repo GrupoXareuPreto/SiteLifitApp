@@ -3,6 +3,7 @@
     justify-content: flex-start; /* conteúdo à esquerda */
     align-items: center;
     margin: 7% auto;
+    margin-top: 150px;
     width: 130vh;
     height: 80vh;
     background: 
@@ -18,7 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    margin-left: 66px;  
+    margin-left: 66px;
 }
 
 .hero-content h1{
@@ -37,4 +38,15 @@
     padding: 15px 30px;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.hero-content {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero-content.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

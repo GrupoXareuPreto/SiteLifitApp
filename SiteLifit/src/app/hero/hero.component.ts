@@ -10,5 +10,18 @@ import { HeaderComponent } from '../header/header.component';
 
 })
 export class HeroComponent {
+  isVisible = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const element = document.querySelector('.hero-content');
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      
+      if (rect.top < windowHeight - 100) {
+        this.isVisible = true;
+      }
+    }
+  }
 }
