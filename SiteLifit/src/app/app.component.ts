@@ -4,10 +4,11 @@ import { FeatureSectionComponent } from './feature-section/feature-section.compo
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from "./hero/hero.component";
 import { MetasComponent } from "./metas/metas.component";
+import { ConversasComponent } from "./conversas/conversas.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, HeroComponent, FeatureSectionComponent, MetasComponent],
+  imports: [RouterOutlet, HeaderComponent, HeroComponent, FeatureSectionComponent, MetasComponent, ConversasComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
