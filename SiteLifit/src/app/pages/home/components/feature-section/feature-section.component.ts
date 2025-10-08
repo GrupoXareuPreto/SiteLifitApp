@@ -1,20 +1,18 @@
 import { Component, HostListener } from '@angular/core';
-import {trigger,style,transition,animate} from '@angular/animations';
-import { HeaderComponent } from '../header/header.component';
+import { HeaderComponent } from '../../../../shared/header/header.component';
 
 @Component({
-  selector: 'app-hero',
+  selector: 'app-feature-section',
   imports: [HeaderComponent],
-  templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css',
-
+  templateUrl: './feature-section.component.html',
+  styleUrls: ['./feature-section.component.css']
 })
-export class HeroComponent {
+export class FeatureSectionComponent {
   isVisible = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const element = document.querySelector('.hero-content');
+    const element = document.querySelector('.feature-container');
     if (element) {
       const rect = element.getBoundingClientRect();
       const windowHeight = window.innerHeight;

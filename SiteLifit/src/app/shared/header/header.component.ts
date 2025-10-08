@@ -8,10 +8,15 @@ import { Component, HostListener} from '@angular/core';
 })
 export class HeaderComponent {
   isScrolled = false;
+  isDropdownOpen = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.scrollY > 100; // altera o valor conforme necessário
+    this.isScrolled = window.scrollY > 100;
+  }
+
+  toggleDropdown(state: boolean) {
+    this.isDropdownOpen = state;
   }
 
   navigateTo(sectionId: string) {
@@ -19,6 +24,11 @@ export class HeaderComponent {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+
+  navigateToSection(section: string) {
+    console.log('Indo para:', section);
+    this.isDropdownOpen = false;
   }
 
 }

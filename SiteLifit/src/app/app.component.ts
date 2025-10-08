@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FeatureSectionComponent } from './feature-section/feature-section.component';
-import { HeaderComponent } from './header/header.component';
-import { HeroComponent } from "./hero/hero.component";
-import { MetasComponent } from "./metas/metas.component";
-import { ConversasComponent } from "./conversas/conversas.component";
-import { NotificacoesComponent } from "./notificacoes/notificacoes.component";
+import { FeatureSectionComponent } from './pages/home/components/feature-section/feature-section.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { HeroComponent } from "./pages/home/components/hero/hero.component";
+import { MetasComponent } from "./pages/home/components/metas/metas.component";
+import { ConversasComponent } from "./pages/home/components/conversas/conversas.component";
+import { NotificacoesComponent } from "./pages/home/components/notificacoes/notificacoes.component";
 
 @Component({
   selector: 'app-root',
