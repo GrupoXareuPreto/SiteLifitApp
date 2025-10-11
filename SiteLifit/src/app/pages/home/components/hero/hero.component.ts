@@ -4,7 +4,7 @@ import { HeaderComponent } from '../../../../shared/header/header.component';
 
 @Component({
   selector: 'app-hero',
-  imports: [HeaderComponent],
+  imports: [],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css',
 

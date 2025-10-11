@@ -1,18 +1,17 @@
 import { Component, HostListener } from '@angular/core';
-import { HeaderComponent } from '../../../../shared/header/header.component';
 
 @Component({
-  selector: 'app-feature-section',
+  selector: 'app-eventosfoto',
   imports: [],
-  templateUrl: './feature-section.component.html',
-  styleUrls: ['./feature-section.component.css']
+  templateUrl: './eventosfoto.component.html',
+  styleUrl: './eventosfoto.component.css'
 })
-export class FeatureSectionComponent {
+export class EventosfotoComponent {
   isVisible = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const element = document.querySelector('.feature-container');
+    const element = document.querySelector('.eventosfoto-container');
     if (element) {
       const rect = element.getBoundingClientRect();
       const windowHeight = window.innerHeight;

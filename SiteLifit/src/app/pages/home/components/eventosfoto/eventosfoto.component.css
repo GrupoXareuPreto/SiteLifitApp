@@ -1,0 +1,23 @@
+.eventosfoto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 150px auto;
+  width: 90%;     
+  max-width: 1200px;
+
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.eventosfoto-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.eventosfoto-container img {
+  width: 100%;
+  height: auto;
+}

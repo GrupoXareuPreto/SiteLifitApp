@@ -5,8 +5,7 @@ import { NotificacoesComponent } from './pages/home/components/notificacoes/noti
 import { ConversasComponent } from './pages/home/components/conversas/conversas.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },          // Página principal
-    //{ path: 'metas', component: MetasComponent },    // Página de metas (se quiser isolada)
-    //{ path: 'notificacoes', component: NotificacoesComponent },
-    //{ path: 'conversas', component: ConversasComponent }
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent },
+    { path: '**', redirectTo: 'home' }
 ];
