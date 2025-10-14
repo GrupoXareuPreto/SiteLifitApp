@@ -1,19 +1,16 @@
 import { Component, HostListener } from '@angular/core';
-import {trigger,style,transition,animate} from '@angular/animations';
-import { HeaderComponent } from '../../../../shared/header/header.component';
 
 @Component({
-  selector: 'app-hero',
-  templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css',
-
+  selector: 'app-postagem',
+  templateUrl: './postagem.component.html',
+  styleUrl: './postagem.component.css'
 })
-export class HeroComponent {
+export class PostagemComponent {
   isVisible = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const element = document.querySelector('.hero-content');
+    const element = document.querySelector('.postagem-container');
     if (element) {
       const rect = element.getBoundingClientRect();
       const windowHeight = window.innerHeight;
