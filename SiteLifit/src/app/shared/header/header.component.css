@@ -15,6 +15,10 @@
   transition: all 0.3s ease;
 }
 
+body {
+  padding-top: 80px; /* Ajuste conforme a altura da sua navbar */
+}
+
 /* ===== LOGO ===== */
 .logo img {
   height: 60px;
@@ -100,6 +104,9 @@
   height: 120px;
   transition: all 0.3s ease;
   cursor: pointer;
+
+  text-decoration: none; /* remove o sublinhado */
+  color: inherit; /* usa a cor do pai, não o azul de link */
 }
 
 .dropdown-item img {
