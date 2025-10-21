@@ -1,13 +1,13 @@
 .hero{
     display: flex;
-    justify-content: flex-start; /* conteúdo à esquerda */
+    justify-content: flex-start;
     align-items: center;
     margin: 7% auto;
     margin-top: 150px;
     width: 130vh;
     height: 80vh;
-    background: 
-        linear-gradient(to right, rgba(0,0,0,0.7) 20%, rgba(0, 0, 0, 0.123) 60%, rgba(0, 0, 0, 0) 100%), 
+    background:
+        linear-gradient(to right, rgba(0,0,0,0.7) 20%, rgba(0, 0, 0, 0.123) 60%, rgba(0, 0, 0, 0) 100%),
         url(/v688_2540.png) no-repeat center center;
     background-size: cover;
     border-radius: 82px;
@@ -18,7 +18,7 @@
     max-width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
     margin-left: 66px;
 }
 

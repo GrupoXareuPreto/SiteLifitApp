@@ -1,0 +1,41 @@
+.faq-accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-header {
+  width: 100%;
+  background: #f9f9f9;
+  border: none;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.faq-header:hover {
+  background: #efefef;
+}
+
+.faq-description {
+  float: right;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.faq-body {
+  padding: 1rem;
+  background: #fff;
+  color: #333;
+}
+
+.faq-content{
+  margin-top: 100px;
+}
