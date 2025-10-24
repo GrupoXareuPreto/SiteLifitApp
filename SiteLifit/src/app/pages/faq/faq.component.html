@@ -1,35 +1,3 @@
 <app-header></app-header>
-<div class="faq-content" id="FAQ">
- <section>
-    <cdk-accordion class="faq-accordion">
-  @for (faq of faqs; track faq; let index = $index) {
-    <cdk-accordion-item #accordionItem="cdkAccordionItem" class="faq-item">
-      <button
-        class="faq-header"
-        (click)="accordionItem.toggle()"
-        tabindex="0"
-        [attr.id]="'faq-header-' + index"
-        [attr.aria-expanded]="accordionItem.expanded"
-        [attr.aria-controls]="'faq-body-' + index">
-        {{ faq.question }}
-        <span class="faq-description">
-          Click to {{ accordionItem.expanded ? 'close' : 'open' }}
-        </span>
-      </button>
-
-      @if (accordionItem.expanded) {
-        <div
-          class="faq-body"
-          role="region"
-          [attr.id]="'faq-body-' + index"
-          [attr.aria-labelledby]="'faq-header-' + index">
-          {{ faq.answer }}
-        </div>
-      }
-    </cdk-accordion-item>
-  }
-</cdk-accordion>
-
- </section>
-</div>
+<app-questions-list></app-questions-list>
 <app-footer></app-footer>
