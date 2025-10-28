@@ -1,33 +1,31 @@
 <div class="questions-content" id="questions">
- <section>
+  <section>
     <cdk-accordion class="questions-accordion">
-  @for (item of questions; track item; let index = $index) {
-    <cdk-accordion-item #accordionItem="cdkAccordionItem" class="questions-item">
-      <button
-        class="questions-header"
-        (click)="accordionItem.toggle()"
-        tabindex="0"
-        [attr.id]="'questions-header-' + index"
-        [attr.aria-expanded]="accordionItem.expanded"
-        [attr.aria-controls]="'questions-body-' + index">
-        {{ item.question }}
-        <span class="questions-description">
-          Click to {{ accordionItem.expanded ? 'close' : 'open' }}
-        </span>
-      </button>
+      @for (item of questions; track item; let index = $index) {
+        <cdk-accordion-item #accordionItem="cdkAccordionItem" class="questions-item">
+          <button
+            class="questions-header"
+            (click)="accordionItem.toggle()"
+            tabindex="0"
+            [attr.id]="'questions-header-' + index"
+            [attr.aria-expanded]="accordionItem.expanded"
+            [attr.aria-controls]="'questions-body-' + index">
+            
+            <span class="header-text">{{ item.question }}</span>
+            <span class="arrow" [class.open]="accordionItem.expanded">▶</span>
+          </button>
 
-      @if (accordionItem.expanded) {
-        <div
-          class="questions-body"
-          role="region"
-          [attr.id]="'questions-body-' + index"
-          [attr.aria-labelledby]="'questions-header-' + index">
-          {{ item.answer }}
-        </div>
+          @if (accordionItem.expanded) {
+            <div
+              class="questions-body"
+              role="region"
+              [attr.id]="'questions-body-' + index"
+              [attr.aria-labelledby]="'questions-header-' + index">
+              {{ item.answer }}
+            </div>
+          }
+        </cdk-accordion-item>
       }
-    </cdk-accordion-item>
-  }
-</cdk-accordion>
-
- </section>
+    </cdk-accordion>
+  </section>
 </div>
