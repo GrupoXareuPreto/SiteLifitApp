@@ -1,0 +1,106 @@
+.empresa-container {
+  margin-top: 100px;
+  background-color: #ffffff;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Cabeçalho */
+.empresa-header {
+  margin-bottom: 40px;
+}
+.empresa-logo {
+  width: 160px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.empresa-logo:hover {
+  transform: scale(1.05);
+}
+.empresa-header h1 {
+  font-weight: 700; 
+  letter-spacing: 1px;
+}
+.slogan {
+  color: #50b350;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.quem-somos {
+  margin-bottom: 60px;
+}
+.quem-somos h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.quem-somos p {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.membros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.membro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.membro img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.membro .nome {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+
+.sobre-app {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+}
+.sobre-app h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 700;
+}
+.sobre-app p {
+  text-align: justify;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.agradecimentos {
+  background-color: #222;
+  color: #d8ffd8;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.agradecimentos h2 {
+  color: #9efc9e;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.agradecimentos p {
+  line-height: 1.5;
+  font-weight: 400;
+}
+.agradecimentos .obrigado {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #9efc9e;
+}

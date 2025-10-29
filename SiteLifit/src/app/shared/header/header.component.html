@@ -5,13 +5,12 @@
 
   <ul class="menu">
     <li><span class="button" (click)="navigateToPage('/Home')">Home</span></li>
-    <!-- Funcionalidades com dropdown -->
+
     <li class="menu-item funcionalidades"
         (mouseenter)="toggleDropdown(true)"
         (mouseleave)="toggleDropdown(false)">
       <span class="button">Funcionalidades</span>
 
-      <!-- Retângulo com opções -->
       <div class="dropdown" [class.show]="isDropdownOpen">
         <a class="dropdown-item" (click)="scrollToSection('metas', $event)">
           <img src="iconeMetas.png" alt="Metas">
@@ -37,6 +36,6 @@
     </li>
 
     <li><span class="button" (click)="navigateToPage('/FAQ')">FAQ</span></li>
-    <li><span class="button" (click)="navigateToPage('/Empresa')">Empresa</span></li>
+    <li><span class="button" (click)="navigateToPage('/empresa')">Sobre</span></li>
   </ul>
 </nav>

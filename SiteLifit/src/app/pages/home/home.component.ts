@@ -12,7 +12,7 @@ import { PostagemComponent } from './components/postagem/postagem.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, HeroComponent, FeatureSectionComponent, NotificacoesComponent, MetasComponent, ConversasComponent, EventosComponent, EventosfotoComponent, FooterComponent, PostagemComponent],
+  imports: [ HeroComponent, FeatureSectionComponent, NotificacoesComponent, MetasComponent, ConversasComponent, EventosComponent, EventosfotoComponent, PostagemComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
